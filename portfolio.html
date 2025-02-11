@@ -471,7 +471,7 @@
 			const loadingScreen = document.getElementById('loading-screen');
 
 			// Charge le modèle GLB
-			const loader = new GLTFLoader().setPath('./models/gltf/');
+			const loader = new GLTFLoader();
 
 			loader.load('portfolio_collgit ision.glb', (gltf) => {
 				const collisionModel = gltf.scene;
